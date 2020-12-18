@@ -11,10 +11,9 @@ let ex = [
     tableauDeux.map((valeur) => valeur+valeur), tableauDeux.filter((valeur) => valeur.length > 2+2),
     tableauDeux.filter((valeur) => valeur.length % 2 === 0), tableauDeux.filter((valeur) => valeur.length - 3 > 10)
 ];
-(() => {
-    for (let i of ex){
-        let affiche = document.createElement("p");
-        affiche.innerHTML = i;
-        document.body.append(affiche);
-    }
-})()
+
+for (let i of ex){
+    let affiche = document.createElement("p");
+    affiche.innerHTML = i;
+    document.body.append(affiche);
+}
